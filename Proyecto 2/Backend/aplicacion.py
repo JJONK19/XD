@@ -96,12 +96,17 @@ def obtener_estadisticas(dataBuscada):
     result_mediana = subprocess.run(['./mediana'], capture_output=True, text=True)
     result_media = subprocess.run(['./media'], capture_output=True, text=True)
     result_desviacion = subprocess.run(['./desviacion'], capture_output=True, text=True)
+    result_minimo = subprocess.run(['./minimo'], capture_output=True, text=True)
+    result_maximo = subprocess.run(['./maximo'], capture_output=True, text=True)
+
 
     # Capturar el código de retorno
     return_code_moda = result_moda.returncode
     return_code_mediana = result_mediana.returncode
     return_code_media = result_media.returncode
     return_code_desviacion = result_desviacion.returncode
+    return_code_minimo = result_minimo.returncode
+    return_code_maximo = result_maximo.returncode
 
     if dataBuscada in sensor_stats:
         sensor_stats[dataBuscada].update({
@@ -109,6 +114,8 @@ def obtener_estadisticas(dataBuscada):
             'mediana': return_code_mediana,
             'desviacionEstandar': return_code_desviacion,
             'moda': return_code_moda,
+            'maximo': return_code_maximo,
+            'minimo': return_code_minimo,
         })
        
 # Endpoint para la raíz
