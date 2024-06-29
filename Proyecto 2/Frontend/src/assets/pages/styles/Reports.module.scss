@@ -1,0 +1,109 @@
+.reportes {
+  padding: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #294b61;
+  }
+
+  .selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    label {
+      margin-right: 10px;
+      font-size: 1rem;
+      color: #333;
+    }
+
+    select {
+      padding: 8px 12px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #fff;
+      color: #333;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        border-color: #888;
+      }
+
+      &:focus {
+        outline: none;
+        border-color: #294b61;
+      }
+    }
+  }
+
+  .sensorDataContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+
+    &:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .counter {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+      background-color: #f9f9f9;
+      padding: 10px 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+
+      h3 {
+        font-size: 1.5rem;
+        color: #294b61;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 1.2rem;
+        color: #333;
+      }
+    }
+
+    .sensorTable {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+
+      th, td {
+        padding: 10px;
+        border: 1px solid #ccc;
+      }
+
+      th {
+        background-color: #294b61;
+        color: #fff;
+      }
+
+      td {
+        background-color: #f9f9f9;
+      }
+    }
+  }
+}

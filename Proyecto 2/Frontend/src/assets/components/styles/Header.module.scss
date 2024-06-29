@@ -1,0 +1,43 @@
+.header {
+  background-color: #4da3c3;
+  
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  .brand {
+    display: flex;
+    align-items: center;
+    
+    h1 {
+      text-align: center;
+      //margin: 0;
+      font-size: 1.5rem; /* Ajusta el tamaño según tu preferencia */
+    }
+
+    .image {
+      width: 250px; /* Ajusta el tamaño según tu preferencia */
+      height: auto;
+      margin-right: 10px;
+    }
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+
+    li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
